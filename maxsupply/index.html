@@ -15,7 +15,7 @@
         info = Http.responseText;
         var json = JSON.parse(info);
 
-        document.write(totalSupply/coinUnits);
+        document.write((totalSupply/coinUnits).toFixed(2));
 
       } else {
         // Oh no! There has been an error with the request!
